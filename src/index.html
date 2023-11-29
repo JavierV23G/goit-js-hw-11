@@ -3,11 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>JavierV hw 11</title>
     <link rel="stylesheet" href="./sass/index.scss" />
   </head>
   <body>
-    
-    <script type="module" src="./index.js"></script>
+    <header>
+      <div class="header__container">
+        <form class="search-form" id="search-form">
+          <input
+            type="text"
+            class="searchBox"
+            name="searchQuery"
+            autocomplete="off"
+            placeholder="Search images..."
+          />
+          <button class="searchBtn" type="submit">🔎</button>
+        </form>
+      </div>
+    </header>
+    <main> 
+      <div class="main__container">
+        <div class="gallery__images">
+        </div>
+        <button class="load__images hidden" type="button">Load More</button>
+      </div>
+    </main>
   </body>
+  <script type="module" src="./index.js"></script>
 </html>

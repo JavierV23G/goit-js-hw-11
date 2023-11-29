@@ -1,1 +1,37 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+.header__container {
+    display: flex;
+    background-color: #4056B4;
+}
+
+.search-form {
+    display: flex;
+    margin: 15px auto;
+    
+
+    .searchBox {
+        width: 300px;
+        height: 30px;
+    }
+
+    .searchBtn {
+        height: 30px;
+        cursor: pointer;
+    }
+}
+
+.load__images {
+    background-color: #4056B4;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    margin: 20 auto 0;
+}
+
+.hidden{
+    display: none;
+}
+
