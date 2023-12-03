@@ -26,28 +26,28 @@ async function getApiInfo(searched, pages) {
 function galleryStructure(data) {
     const HTMLelements = data.map(element => {
         return `
-            <div class="cat__card">
-                <img class="cat__img" src="${element.webformatURL}" alt="photo" loading="lazy">
+            <div class="image__card">
+                <img class="element__img" src="${element.webformatURL}" alt="photo" loading="lazy">
 
-                <ul class="cat__info">
-                    <li class="cat__data">
-                        <h4 class="cat__data__title">Likes</h4>
-                        <p class="cat__data__value">${element.likes}</p>
+                <ul class="element__info">
+                    <li class="element__data">
+                        <h4 class="element__data__title">Likes</h4>
+                        <p class="element__data__value">${element.likes}</p>
                     </li>
 
-                    <li class="cat__data">
-                        <h4 class="cat__data__title">Views</h4> 
-                        <p class="cat__data__value">${element.views}</p>
+                    <li class="element__data">
+                        <h4 class="element__data__title">Views</h4> 
+                        <p class="element__data__value">${element.views}</p>
                     </li>
 
-                    <li class="cat__data"> 
-                        <h4 class="cat__data__title">Comments</h4>
-                        <p class="cat__data__value">${element.comments}</p>
+                    <li class="element__data"> 
+                        <h4 class="element__data__title">Comments</h4>
+                        <p class="element__data__value">${element.comments}</p>
                     </li>
 
-                    <li class="cat__data"> 
-                        <h4 class="cat__data__title">Downloads</h4>
-                        <p class="cat__data__value">${element.downloads}</p>
+                    <li class="element__data"> 
+                        <h4 class="element__data__title">Downloads</h4>
+                        <p class="element__data__value">${element.downloads}</p>
                     </li>
                 </ul>
             </div>
